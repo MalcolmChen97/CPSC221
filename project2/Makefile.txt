@@ -1,0 +1,18 @@
+
+all : huftree
+
+
+huftree : huftree.o
+	g++ -o huftree -g huftree.o
+
+
+huftree.o : huftree.cc
+	g++ -Wall -c -g huftree.cc
+
+
+
+
+
+clean :
+	rm *.o
+	rm huftree
